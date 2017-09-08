@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.site-wrapper {
+  background-color: #849d8f;
+}
+
+.main-header .header-logo {
+  font-size: 0;
+}
+
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.main-navigation .site-nav__item {
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.main-navigation .user-nav__item {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-nav__item a{
+  text-decoration: none;
+}
