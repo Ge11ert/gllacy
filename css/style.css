@@ -5,16 +5,35 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .site-wrapper {
   background-color: #849d8f;
 }
 
+.site-wrapper--main {
+  background-image: url("../img/slider_img_1.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* Шапка сайта */
+
 .main-header .header-logo {
   font-size: 0;
 }
-
 
 .main-navigation ul {
   margin: 0;
@@ -22,20 +41,274 @@ body {
   list-style: none;
 }
 
-.main-navigation a {
-  color: #ffffff;
-}
-
 .main-navigation .site-nav__item {
   line-height: 18px;
-  font-weight: bold;
+}
+
+.site-nav__item--current a {
+  text-decoration: none;
+  background-color: #d07058;
 }
 
 .main-navigation .user-nav__item {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
 }
 
-.user-nav__item a{
+.user-nav__item a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation .user-search {
+  font-size: 0;
+}
+
+.site-nav__item a {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.user-nav__item a {
+  color: #ffffff;
   text-decoration: none;
+}
+
+.header-contacts__worktime {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-contacts__tel {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*  Главная страница  */
+
+.button {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+}
+
+.slide__title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.offers__item h1 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.offers__item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.hit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products-item__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.products-item__title a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.products-item__price {
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.products-item__price span {
+  font-size: 30px;
+}
+
+.about-us {
+  color: #323232;
+  background-image: url("../img/waffel.jpg");
+}
+
+.about-us__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.about-us__features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-weight: 400;
+}
+
+.news {
+  background-color: #fff;
+}
+
+.news__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.news__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.subscribe-container {
+  background-color: #f8f7f4;
+}
+
+.subscribe__text {
+  margin: 0;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.subscribe-form label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.contacts {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.contacts__tel,
+.contacts__address {
+  margin: 0;
+}
+
+.contacts__address b,
+.contacts__tel b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__tel b {
+  line-height: 22px;
+}
+
+/* Страница Каталог*/
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-title {
+  margin: 0;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.filter {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter select {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.products {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-list__page a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination-list__page--current a {
+  color: #323232;
+  background-color: #fff;
+}
+
+/* Подвал страницы */
+
+.main-footer .social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.footer-menu__item {
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-menu__item:first-child {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.footer-copyright a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
